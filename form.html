@@ -27,46 +27,48 @@
 
         <Label> Numero da Inscrição: </label>
 
-        <input type="text" name="numero"><br><br>
+        <input type="text" name="numero" disabled><br><br>
 
         <Label> Nome: </label> 
 
-        <input type="text" name="nome"><br><br>
+        <input type="text" style="text-transform: uppercase;" name="nome" size="1" required minlength="5" maxlength="40" UPPERCASE><br><br>
 
         <label> RG:</label>
-        <input type="text" name="rg">
+        <input type="text" name="rg" size="1" required minlength="5" maxlength="40">
 
         <Label> Expedido por: </label>
 
-        <input type="text" name="expedido"><br><br>
+        <input type="text" name="expedido" size="1" required minlength="5" maxlength="40"><br><br>
 
         <Label> CPF: </label>
 
-        <input type="text" name="cpf"><br><br>
+        <input type="text" name="cpf" required 
+                pattern="\d{3}\.\d{3}\.\d{3}\.-\d{2}"
+                placeholder="123.456.789.00"><br><br>
 
         <Label> Data de nascimento: </label>
 
-        <input type="text" name="data">
+        <input type="datatime-local" name="data" size="1" value="now()" min="1960-06-07T00:00" required>
 
         <Label> Numero de dependentes: </label>
 
-        <input type="text" name="dependentes"><br><br>
+        <input type="text" name="dependentes" size="1" required minlength="5" maxlength="40"><br><br>
 
         <Label> Endereco: </label>
 
-        <input type="text" name="endereco">
+        <input type="text" style="text-transform: uppercase;" name="endereco" size="1" required minlength="5" maxlength="40">
 
         <Label> N°: </label>
 
-        <input type="text" name="nome1"><br><br>
+        <input type="text" name="nome1" size="1" required minlength="5" maxlength="40"><br><br>
 
         <Label> Bairro: </label>
 
-        <input type="text" name="bairro"><br><br>
+        <input type="text" style="text-transform: uppercase;" name="bairro" size="1" required minlength="5" maxlength="40"><br><br>
 
         <Label> Municipio: </label>
 
-        <input type="text" name="municipio">
+        <input type="text" style="text-transform: uppercase;" name="municipio" size="1" required minlength="5" maxlength="40">
 
         <select name="UF" id="UF">
             <option value="1">selecionar</option>
@@ -101,23 +103,27 @@
         </select></br></br>
         <Label> Fone: </label>
 
-        <input type="text" name="fone">
+        <input type="text" name="fone" size="13" required
+                pattern="[0-9]{2} [0-9]{4} [0-9]{4}"
+                placeholder="11 99999-9999">
 
         <Label> Celular/WhatsApp: </label>
 
-        <input type="text" name="zap"><br><br>
+        <input type="text" name="zap" size="13" required
+                pattern="[0-9]{2} [0-9]{4} [0-9]{4}"
+                placeholder="11 99999-9999"><br><br>
 
         <Label> Telefone para recado: </label>
 
-        <input type="text" name="recado">
+        <input type="text" name="recado" size="1" required minlength="5" maxlength="40">
 
         <Label> Nome: </label>
 
-        <input type="text" name="nomerecado"><br><br>
+        <input type="text" style="text-transform: uppercase;" name="nomerecado" size="1" required minlength="5" maxlength="40"><br><br>
 
         <Label> E-mail: </label>
 
-        <input type="email" name="email"><br><br>
+        <input type="email" style="text-transform: uppercase;" name="email" size="1" required minlength="5" maxlength="40"><br><br>
 
         <h2>Curso pretendido:</h2>
 
